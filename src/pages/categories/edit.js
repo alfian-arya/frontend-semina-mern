@@ -3,14 +3,14 @@ import { Container } from "react-bootstrap";
 import SBreadCrumb from "../../components/BreadCrumb";
 import SAlert from "../../components/Alert";
 import Form from "./form";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import { getData, putData } from '../../utils/fetchData';
 // import { useDispatch } from 'react-redux';
 // import { setNotif } from '../../redux/notif/actions';
 
 function CategoryEdit() {
   const navigate = useNavigate();
-  const { categoryId } = useParams();
+  //const { categoryId } = useParams();
   const [form, setForm] = useState({
     name: "",
   });
